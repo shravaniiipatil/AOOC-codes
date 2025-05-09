@@ -1,19 +1,14 @@
-
 import java.util.Scanner;
-
 class Queue1 {
-
     int size;
     int[] queue;
     int front, rear;
-
     Queue1(int s) {
         size = s;
         queue = new int[size];
         front = -1;
         rear = -1;
     }
-
     void enqueue(int ele) {
         if (rear == size - 1) {
             System.out.println("Queue is Full");
@@ -25,7 +20,6 @@ class Queue1 {
             System.out.println("Element added to queue: " + ele);
         }
     }
-
     void dequeue() {
         if (front == -1 || front > rear) {
             System.out.println("Queue is Empty");
@@ -34,7 +28,6 @@ class Queue1 {
             front++;
         }
     }
-
     void display() {
         if (front == -1 || front > rear) {
             System.out.println("Queue is Empty");
@@ -45,7 +38,6 @@ class Queue1 {
             }
         }
     }
-
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.print("Enter the size of the queue: ");
@@ -58,7 +50,6 @@ class Queue1 {
             System.out.println("3. DISPLAY QUEUE ");
             System.out.println("4. EXIT ");
             System.out.print("Enter Your Option: ");
-
             int opt = s.nextInt();
             switch (opt) {
                 case 1:

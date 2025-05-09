@@ -1,4 +1,3 @@
-
 interface Shape {
 
     void area();
